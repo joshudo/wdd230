@@ -1,0 +1,48 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+
+header {
+    background-color: rgb(84, 90, 175);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.main-container {
+    width: 300px;
+    height: 200px;
+    position: relative;    
+}
+
+#middle-wrap-name {
+    left: 350px;
+    bottom: 150px;
+    position: relative;
+    color: white;
+}
+
+#lower-wrap-title {
+    position: relative;
+    text-align: left;
+    color: black;
+}
+
+footer {
+    background-color: rgb(84, 90, 175);
+    text-align: center;
+    color: white;
+}
+
+#lower-section {
+    color: yellow;
+}
+
+#container-0 {
+    position: relative;
+}
