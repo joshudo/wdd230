@@ -12,6 +12,7 @@ header {
     background-color: rgb(84, 90, 175);
     text-align: center;
     padding: 1.5rem;
+    border-radius: 15px;
 }
 
 .main-container {
@@ -37,6 +38,11 @@ footer {
     background-color: rgb(84, 90, 175);
     text-align: center;
     color: white;
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 55px;
 }
 
 #lower-section {
