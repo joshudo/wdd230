@@ -1,0 +1,20 @@
+@media only screen and (min-width: 65.5em) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 5px;
+        align-content: center;
+    }
+
+    .frist-topic {
+        grid-column: span 1;
+    }
+
+    .second-topic {
+        grid-column: span 1;
+    }
+
+    .third-topic {
+        grid-column: span 1;
+    }
+}
