@@ -2,7 +2,7 @@ body, footer {
     margin: auto;
     max-width: 85%;
     text-align: center;
-    background-color: #FE5F55;
+    background-color: #DFFDFF;
 }
 
 
@@ -20,7 +20,7 @@ p {
     border-radius: 15px;
     max-width: 80%;
     margin: auto;
-    background-color: #333745;
+    background-color: #90BEDE;
     color: white;
 }
 
@@ -28,8 +28,8 @@ p {
     border-radius: 15px;
     max-width: 420px;
     margin: auto;
-    background-color: #E63462;
-    border: 2px solid #333745;
+    background-color: #E5E1EE;
+    border: 2px solid #68EDC6;
     padding: 0px 15px 15px 15px;
 }
 
@@ -44,15 +44,15 @@ p {
     max-width: 340px;
     padding: 1px;
     border-radius: 20px;
-    border: 2px solid #333745;
+    border: 2px solid #68EDC6;
 }
 
 a {
-    border: 2px solid #333745;
+    border: 2px solid #68EDC6;
     margin: 15px;
     padding: 15px;
-    background-color: #333745;
-    color: #C7EFCF;
+    background-color: #68EDC6;
+    color: white;
     border-radius: 15px;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 #org-img {
-    background-color: #C7EFCF;
+    background-color: #90F3FF;
     padding: 1em;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -75,7 +75,7 @@ a {
     display: block;
     block-size: 180px;
     padding: 1em;
-    background-color: #EEF5DB;    
+    background-color: #68EDC6;    
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
