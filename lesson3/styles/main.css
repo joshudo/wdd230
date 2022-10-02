@@ -75,3 +75,7 @@ p {
     font-family: 'PT Serif', serif;
     font-size: 14px;
 }
+
+.logo {
+    border-radius: 30px;
+}
