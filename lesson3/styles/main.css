@@ -9,7 +9,9 @@ d3docb
 body {
     background-color: #393e4a;
     list-style-position: inside;
-    max-width: 760px; 
+    max-width: 760px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 header, main, footer {
@@ -74,6 +76,11 @@ h3 {
 p {
     font-family: 'PT Serif', serif;
     font-size: 14px;
+}
+
+img {
+    width: max-content;
+    height: max-content;
 }
 
 .logo {
