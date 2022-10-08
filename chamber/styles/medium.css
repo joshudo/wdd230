@@ -1,0 +1,33 @@
+:root {
+    --main-color: #44bba4;
+    --bg: #393e4a;
+    --border: 1rem solid rgba(255,255,255,.3);
+    --content: #e7e5df;
+}
+
+@media only screen and (max-width: 35rem) {
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%; right: -100%;
+        background: var(--content);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
