@@ -6,6 +6,11 @@
 }
 
 @media only screen and (min-width: 35rem) {
+    header h1 {
+        max-width: fit-content;
+        padding-right: 2rem;
+    }
+
     nav button {
         display: none;
     }
@@ -27,7 +32,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(6, 20%);
         grid-gap: 20px;
-        padding: 2rem;
+        padding: 7%;
         
     }
 
