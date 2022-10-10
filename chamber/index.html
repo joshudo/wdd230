@@ -4,40 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
     <title>El Progreso Chambers</title>
 </head>
 <body>
     <header>
-        <div class="header">
-            <a href="#" class="logo">
-                <img src="images/clean-logo.png" alt="Emblem of El Progreso">
-                <div class="date"></div>
-            </a>
-            
-            <nav class="navbar">                 
-                <a href="#">Home</a>
-                <a href="#">News</a>
-                <a href="#">Events</a>
-                <a href="#">Weather</a>
-                <a href="#">Join</a>
-            </nav>
-            
-            <div class="icons">
-                <div class="ri-facebook-fill"></div>
-                <div class="ri-linkedin-fill"></div>
-                <div class="menu-btn"><i class="ri-menu-fill"></i></div>
-            </div>
-        </div>      
-    </header>    
-
+        <div id="image-date">
+            <img src="images/clean-logo.png" alt="Emblem of El Progreso">
+            <br>
+            <span class="date"></span>
+        </div>        
+        <h1>El Progreso Chamber</h1>
+        
+    </header>
+    <nav>
+        <button id="burgerBtn"><span><i class="ri-menu-fold-line"></i></span><span><i class="ri-menu-unfold-line"></i></span></button>
+        <ul id="navList">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
     <main class="main">
         <div class="hero">
         
@@ -97,11 +91,14 @@
         </div>
         </div>
     </main>
-
-    <footer>    
-        <a href="#"><img src="images/clean-logo.png" alt=""></a>
-        <a href="#">CONTACT US</a>
-    </footer>  
-    <script src="scripts/scripts.js"></script>  
+    <footer>
+        <div id="img-contact">
+            <a href="#"><img src="images/clean-logo.png" alt=""></a>
+            <a href="#">CONTACT US</a>
+        </div>
+        &#169; 2022 .:|:. Jossue Daniel Ortiz .:|:. Utah
+        <a href="https://joshudo.github.io/wdd230/W01-assignment/">HOME PAGE</a>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

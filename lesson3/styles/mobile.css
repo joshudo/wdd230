@@ -15,6 +15,10 @@
     margin-right: 50px;
 }
 
+.logo-img img{
+    height: 4rem;
+}
+
 .nav-links {
     list-style: none;
     display: flex;

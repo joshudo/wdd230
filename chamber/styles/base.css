@@ -5,81 +5,112 @@
     --content: #e7e5df;
 }
 
-
-header{
-    display: grid;
-    position: relative;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7%;
-    border-bottom: var(--border);
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
+body {
     background-color: var(--bg);
 }
 
-.menu-btn {
-    display: none;
+header {
+    color: var(--content);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--border);
+    padding: 0 2rem;
+}
+
+header img {
+    height: 4rem;
+    background: #e7e5df;
+    border-radius: 45px;
+}
+
+header #image-date {
+    font-size: .8rem;
+    text-align: center;
 }
 
 .date {
+    font-size: 2vh;
+}
+
+nav {
+    background-color: var(--content);
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(63, 62, 62);
+
+}
+
+nav ul#navList {
+    /*removing the bullet points for the items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    /* when displayed as block the a alementes
+     cover all the space and can be clicked anywhere */ 
+    display: block;
+    padding: .8rem 2vw;
+    /* removing the underline for the anchor */
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .8rem;
-    margin: 0.1rem;
-    color: var(--content);
+    color: rgb(63, 62, 62);
+    
 }
 
-.logo img {
-    height: 5rem;
-    cursor: pointer;
-    background-color: var(--main-color);
-    border-radius: 1.5rem;
+/* the li.active calls the class active in the list */
+nav ul li.active a {
+    /* creting a hover with a darker shade */
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
-.navbar a {
-    text-decoration: none;    
-    margin: 0.1rem;
-    font-size: 1.6rem;
-    color: var(--main-color);
+/* if the active were to be after the hover, it affects how the page reacts */ 
+
+nav ul li a:hover {
+    background-color: #43b9a1c7;
 }
 
-.navbar a:hover {
-    color: var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-}
+nav ul {display: none;}
+nav ul.open { display: block;}
 
-.icons {
-    display: flex;
-    gap: 1rem;
-    color: var(--content);
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
+#burgerBtn span:nth-child(1) {display: block;}
+#burgerBtn span:nth-child(2) {display: none;}
+
+#burgerBtn.open span:nth-child(1) {display: none;}
+#burgerBtn.open span:nth-child(2) {display: block;}
+
+main {
+
+    background-color: var(--content);
 }
 
 footer {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--content);
+    font-size: .7rem;
+}
+
+footer div#img-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    background-color: var(--bg);
 }
 
 footer img {
-    height: 5rem;
+    height: 3rem;
     cursor: pointer;
-    background-color: var(--main-color);
-    border-radius: 1.5rem;
+    background-color: var(--content);
+    border-radius: 45px;
 }
 
 footer a {
-    color: var(--content);
     text-decoration: none;
-    padding-top: 2rem;
+    color: white;
 }
