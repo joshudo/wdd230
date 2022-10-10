@@ -69,7 +69,9 @@
         grid-row: 5 / 6;
     }
 
-    footer {
-        font-size: 1rem;
+    footer ul {
+        
+        text-align: right;
+        font-size: .8rem;
     }
 }

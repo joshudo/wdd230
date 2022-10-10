@@ -116,17 +116,18 @@ footer {
     font-size: .7rem;
 }
 
-footer div#img-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 footer img {
     height: 3rem;
     cursor: pointer;
     background-color: var(--content);
     border-radius: 45px;
+}
+
+footer ul {
+    list-style-type: none;
+    border-top: 1px solid var(--content);
 }
 
 footer a {

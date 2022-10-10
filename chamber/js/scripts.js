@@ -7,10 +7,21 @@ const bwr = document.getElementById('burgerBtn')
 
 bwr.onclick = toggleMenu;
 
-const datefield = document.querySelector(".date");
+const datefieldUK = document.querySelector(".date");
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	dateStyle: "full"
+}).format(now);
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
+datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+const options = {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+};
+
+let oLastModif = new Date(document.lastModified);
+
+document.getElementById("last-modified").textContent = oLastModif.toLocaleString("en-US", options);
