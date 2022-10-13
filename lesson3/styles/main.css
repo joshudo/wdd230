@@ -1,87 +1,78 @@
-/*
-clors for the site
-44bba4
-e7e5df
-8884FF
-393e4a
-*/
-
-body {
-    background-color: #393e4a;
-    list-style-position: inside;
-    width: 80%;
-    margin: 0 auto;
+:root {
+    --main-color: #44bba4;
+    --bg: #393e4a;
+    --border: 1rem solid rgba(255,255,255,.3);
+    --content: #e7e5df;
 }
 
-header, main, footer {
-    margin: auto;
+header nav {
+    color: var(--content);
+    border-bottom: var(--border);
+    padding: 1rem 0.2rem;
+    font-size: .8rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+a img.logo {
+    height: 5rem;
+    background-color: var(--content);
+    border-radius: 45px;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+}
+
+#toggler, .nav-bar label {
+    display: none;
 }
 
 main {
-    background-color: #e7e5df;
-    padding-left: 15px;
-}
-
-header, footer {
-    background-color: #44bba4;
-    text-align: center;
-    margin: auto;
-}
-
-table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-
-main {
-    padding: 10px;
-}
-
-
-th, td {
-    padding: 10px;
-}
-
-header {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
-nav {
-    font-size: 14px;
-}
-
-footer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    background-color: var(--content);
 }
 
 h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
 }
 
-h1 {
-    font-size: 18px;
-}
-
-h2 {
-    font-size: 17px;
-}
-
-h3 {
-    font-size: 16px;
+header, nav, footer {
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
     font-family: 'PT Serif', serif;
-    font-size: 14px;
 }
 
-img {
-    width: max-content;
-    height: max-content;
+body {
+    background-color: var(--bg);
 }
 
-.logo {
-    border-radius: 30px;
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer img {
+    height: 4rem;
 }
