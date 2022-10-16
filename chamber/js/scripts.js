@@ -25,3 +25,11 @@ const options = {
 let oLastModif = new Date(document.lastModified);
 
 document.getElementById("last-modified").textContent = oLastModif.toLocaleString("en-US", options);
+
+const dayNow = now.getDay();
+
+if (dayNow == 'Monday' || dayNow == "Tuesday") {
+    document.getElementById('banner').style.display = "block";
+} else {
+    document.getElementById('banner').style.display = "none";
+}
