@@ -28,7 +28,7 @@ document.getElementById("last-modified").textContent = oLastModif.toLocaleString
 
 const dayNow = now.getDay();
 
-if (dayNow == 'Monday' || dayNow == "Tuesday") {
+if (dayNow == 'Tuesday' || dayNow == "Wednesday") {
     document.getElementById('banner').style.display = "block";
 } else {
     document.getElementById('banner').style.display = "none";
