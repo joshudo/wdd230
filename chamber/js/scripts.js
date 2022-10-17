@@ -1,35 +1,37 @@
-function toggleMenu () {
-    document.getElementById("navList").classList.toggle("open");
-    document.getElementById("burgerBtn").classList.toggle("open");
+function toggleMenu() {
+  document.getElementById("navList").classList.toggle("open");
+  document.getElementById("burgerBtn").classList.toggle("open");
 }
 
-const bwr = document.getElementById('burgerBtn')
+const bwr = document.getElementById("burgerBtn");
 
 bwr.onclick = toggleMenu;
 
-const datefieldUK = document.querySelector(".date");
+const datefieldUK = document.querySelector("#date");
+
 const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
+  dateStyle: "full",
 }).format(now);
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 const options = {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
 };
 
 let oLastModif = new Date(document.lastModified);
 
-document.getElementById("last-modified").textContent = oLastModif.toLocaleString("en-US", options);
+document.getElementById("last-modified").textContent =
+  oLastModif.toLocaleString("en-US", options);
 
 const dayNow = now.getDay();
 
-if (dayNow == 'Tuesday' || dayNow == "Wednesday") {
-    document.getElementById('banner').style.display = "block";
+if (dayNow == "Monday" || dayNow == "Tuesday") {
+  document.getElementById("banner").style.display = "block";
 } else {
-    document.getElementById('banner').style.display = "none";
+  document.getElementById("banner").style.display = "none";
 }

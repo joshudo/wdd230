@@ -60,7 +60,7 @@
     }
 
     .events {
-        grid-column: 3/4fr;
+        grid-column: 1/2;
         grid-row: 5 / 6;
     }
 
