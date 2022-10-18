@@ -31,7 +31,7 @@ document.getElementById("last-modified").textContent =
 const dayNow = now.getDay();
 
 if (dayNow == "Monday" || dayNow == "Tuesday") {
-  document.getElementById("banner").style.display = "block";
+  document.getElementById("#banner").style.display = "block";
 } else {
-  document.getElementById("banner").style.display = "none";
+  document.getElementById("#banner").style.display = "none";
 }
