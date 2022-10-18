@@ -28,10 +28,10 @@ let oLastModif = new Date(document.lastModified);
 document.getElementById("last-modified").textContent =
   oLastModif.toLocaleString("en-US", options);
 
-const dayNow = now.getDay();
+let dayNow = now.getDay();
 
-if (dayNow == "Monday" || dayNow == "Tuesday") {
-  document.getElementById("#banner").style.display = "block";
+if (dayNow == "1" || dayNow == "2") {
+  document.getElementById("banner").style.display = "block";
 } else {
-  document.getElementById("#banner").style.display = "none";
+  document.getElementById("banner").style.display = "none";
 }
