@@ -6,26 +6,7 @@
 }
 
 @media only screen and (min-width: 35rem) {
-    header h1 {
-        max-width: fit-content;
-        padding-right: 2rem;
-    }
-
-    nav button {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        margin-left: 2vw;
-        border-left: 1px solid rgba(0, 0, 0, 0.3);
-    }
-
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-    }
+    
 
     .main {
         display: grid;

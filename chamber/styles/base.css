@@ -43,8 +43,17 @@ header #image-date {
 }
 
 header h1 {
-    max-width: 9rem;
+    width: 100%;
+    font-size: 1.5rem;
     text-align: center;
+    padding-left: 0.2rem;
+}
+
+header h3 {
+    font-size: 0.8rem;
+    text-align: right;
+    margin: 1rem 0.5rem 0 0;
+
 }
 
 .date {
@@ -63,7 +72,7 @@ nav button {
 
 }
 
-nav ul#navList {
+nav ul#nav-list {
     /*removing the bullet points for the items */
     list-style-type: none;
     padding: 0;
@@ -97,15 +106,19 @@ nav ul li a:hover {
 nav ul {display: none;}
 nav ul.open { display: block;}
 
-#burgerBtn span:nth-child(1) {display: block;}
-#burgerBtn span:nth-child(2) {display: none;}
+#burger-btn span:nth-child(1) {display: block;}
+#burger-btn span:nth-child(2) {display: none;}
 
-#burgerBtn.open span:nth-child(1) {display: none;}
-#burgerBtn.open span:nth-child(2) {display: block;}
+#burger-btn.open span:nth-child(1) {display: none;}
+#burger-btn.open span:nth-child(2) {display: block;}
 
 main {
     padding: 2rem;
     background-color: var(--content);
+}
+
+main div {
+    margin: 1.5rem 0;
 }
 
 footer {
