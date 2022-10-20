@@ -102,6 +102,8 @@
         color: var(--content);
         font-size: 1rem;
         width: 100%;
+        border: none;
+        border-top: 1px solid white;
     }   
 
     

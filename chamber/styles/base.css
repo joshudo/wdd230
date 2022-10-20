@@ -123,6 +123,7 @@ main div {
     background-color: whitesmoke;
     width: 80%;
     border: 1px solid var(--bg);
+    border-radius: 5px;
 }
 
 main .hero picture.hero-img {
