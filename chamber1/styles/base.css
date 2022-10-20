@@ -1,0 +1,196 @@
+:root {
+    --main-color: #44bba4;
+    --bg: #393e4a;
+    --border: 1rem solid rgba(255,255,255,.3);
+    --content: #e7e5df;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+header, nav, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+}
+
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    color: var(--content);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--border);
+    padding: 1rem 0.2rem;
+    font-size: .8rem;
+}
+
+header img {
+    height: 4rem;
+    background: #e7e5df;
+    border-radius: 15px;
+}
+
+header #image-date {
+    font-size: .8rem;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0.2rem;
+}
+
+header h3 {
+    font-size: 0.8rem;
+    text-align: right;
+    margin: 1rem 0.5rem 0 0;
+
+}
+
+.date {
+    font-size: 2vh;
+}
+
+nav {
+    background-color: var(--content);
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(63, 62, 62);
+
+}
+
+nav ul#nav-list {
+    /*removing the bullet points for the items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    /* when displayed as block the a alementes
+     cover all the space and can be clicked anywhere */ 
+    display: block;
+    padding: .8rem 2vw;
+    /* removing the underline for the anchor */
+    text-decoration: none;
+    color: rgb(63, 62, 62);
+    
+}
+
+/* the li.active calls the class active in the list */
+nav ul li.active a {
+    /* creting a hover with a darker shade */
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* if the active were to be after the hover, it affects how the page reacts */ 
+
+nav ul li a:hover {
+    background-color: #43b9a1c7;
+}
+
+nav ul {display: none;}
+nav ul.open { display: block;}
+
+#burger-btn span:nth-child(1) {display: block;}
+#burger-btn span:nth-child(2) {display: none;}
+
+#burger-btn.open span:nth-child(1) {display: none;}
+#burger-btn.open span:nth-child(2) {display: block;}
+
+main {
+    padding: 2rem;
+    background-color: var(--content);
+}
+
+main div {
+    margin: 1.2rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    width: 80%;
+    border: 1px solid var(--bg);
+    border-radius: 5px;
+}
+
+main .hero picture.hero-img {
+    height: 50%;
+    float: top;
+}
+
+.hero picture.hero-img img {
+    width: 100%;
+}
+
+main div.news span {
+    float: left;
+    font-size: 9rem;
+}
+
+main div.events span {
+    float: right;
+    font-size: 9rem;
+}
+
+main div.weather span {
+    float: left;
+    font-size: 9rem;
+}
+
+.main div.spotlights {
+    padding-bottom: 5rem;
+}
+
+.main div.spotlights img#img-spot-1 {
+    float: right;
+    height: 12rem;
+    margin-left: 3rem;
+}
+
+.main div.spotlights img#img-spot-2 {
+    float: left;
+    height: 12rem;
+    margin-right: 3rem;
+}
+
+
+footer {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--content);
+    font-size: .7rem;
+}
+
+
+
+footer img {
+    height: 6rem;
+    cursor: pointer;
+    background-color: var(--content);
+    border-radius: 15px;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    border-top: 1px solid var(--content);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
