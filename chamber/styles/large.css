@@ -70,10 +70,6 @@
         margin-top: 2rem;
     }
 
-    .main {
-        max-height: 2600px;
-    }
-
     .main div.spotlights {
         padding: 1rem;
         display: block        
@@ -81,14 +77,18 @@
 
     .main div.spotlights img#img-spot-1 {
         float: right;
-        height: 12rem;
-        margin-left: 3rem;
+        height: 10rem;
+        margin-left: 1rem;
     }
     
     .main div.spotlights img#img-spot-2 {
         float: left;
-        height: 12rem;
-        margin-right: 3rem;
+        height: 10rem;
+        margin-right: 1rem;
+    }
+
+    .main div.join img {
+        height: 50%;
     }
 
     footer {
