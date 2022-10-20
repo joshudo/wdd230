@@ -41,8 +41,13 @@
     
     <main class="main">
         <div class="hero">
-
+            <picture class="hero-img">
+                <source srcset="images/medium-hero.jpg" media="(min-width: 35rem) and (max-width: 63.9rem)">
+                <source srcset="images/large-hero.jpg" media="(min-width: 64rem)">
+                <img src="images/small-hero.jpg" alt="hero picture">
+            </picture>
             <h1>Hero image call to action</h1>
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Totam voluptate doloremque ex praesentium eveniet fuga soluta aut minima repellendus asperiores amet sequi, 
             molestiae magnam dolorum dolorem ullam inventore in veritatis!
@@ -51,49 +56,57 @@
         </div>
         <div class="news">
             <h2>News</h2>
+            <span><i class="ri-newspaper-fill"></i></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
                  praesentium. Ullam quis nemo nisi consequatur nulla quas architecto enim?
                   Recusandae quo neque facilis libero beatae voluptatibus iusto expedita natus error.
             </p>
+            
         </div>
         <div class="events">
             <h2>Events</h2>
+            <span><i class="ri-calendar-event-line"></i></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Voluptatem aspernatur dicta suscipit adipisci delectus at veniam possimus aliquam officia, 
                 excepturi distinctio praesentium nulla. 
                 Itaque doloremque eos aut tempora obcaecati magnam?
             </p>
+            
         </div>
         <div class="weather">
             <h2>Weather</h2>
+            <span><i class="ri-cloud-windy-fill"></i></i></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Magnam, esse quasi nulla nihil, qui ad molestiae, maxime quo vel eum quisquam. 
                 Aspernatur eius libero perspiciatis modi, dolorum praesentium debitis eligendi!
             </p>
+            
         </div>
         <div class="join">
             <h2>Join</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illo dignissimos quae. Maiores vitae voluptatibus tenetur laborum similique, 
-                nihil enim sint voluptas laboriosam aperiam itaque harum dolorem? 
-                Doloribus, ex nemo?
+                nihil enim sint voluptas laboriosam aperiam itaque harum dolorem?
             </p>
+            <a href="#"><img src="images/join-img.svg" alt="I man with a sheet of paper"></a>
+            
         </div>
         <div class="spotlights">
             
-            <h3>Spotlight 1</h3>
-            <p>
+            <h3 class="spot-1">Spotlight 1</h3>
+            <img src="images/spotlight-1.svg" alt="Man with prothestic leg standing" id="img-spot-1">
+            <p class="spot-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Odit, perferendis excepturi! Modi cupiditate commodi autem eos error. 
-                Rem ducimus maiores reiciendis itaque beatae assumenda officia fugiat debitis. 
-                Saepe, molestias minima.
+                               
             </p>
         
         
-            <h3>Spotlight 2</h3>
-            <p>
+            <h3 class="spot-2">Spotlight 2</h3>
+            <img src="images/spotlight-2.svg" alt="Man standing with long sleve shirt" id="img-spot-2">
+            <p class="spot-2">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Culpa quae tenetur velit est ea, distinctio eaque iusto debitis delectus qui? 
-                Quae pariatur ducimus adipisci incidunt quis ea obcaecati aliquid eaque?
+                
             </p>
             
         </div>
