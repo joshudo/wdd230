@@ -70,8 +70,8 @@
         margin-top: 2rem;
     }
 
-    .main div {
-        height: 80%;
+    .main {
+        max-height: 2600px;
     }
 
     .main div.spotlights {
