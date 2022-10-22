@@ -67,12 +67,12 @@
     }
 
     main.hero picture {
-        width: 50%;
-        float: top;
+        width: 80%;
+        
     }
 
     main .hero picture.hero-img img {
-        width: 60%;
+        width: 80%;
         
         margin: 1rem 3rem 3rem 1rem;
     }
