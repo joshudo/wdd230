@@ -19,7 +19,11 @@
 <body>
     <header>
         <div id="image-date">
-            <img src="images/clean-logo.png" alt="Emblem of El Progreso">
+            <picture>
+                <source type="image/webp" srcset="images/clean-logo.webp">
+                <source type="image/png" srcset="images/clean-logo.png">
+                <img src="images/clean-logo.png" alt="Emblem of El Progreso">    
+            </picture>            
             <br>
             <span id="date"></span>
         </div>        
@@ -75,18 +79,18 @@
         </div>
         <div class="weather">
             <h2>Weather</h2>
-            <span><i class="ri-cloud-windy-fill"></i></i></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Magnam, esse quasi nulla nihil, qui ad molestiae, maxime quo vel eum quisquam. 
-                Aspernatur eius libero perspiciatis modi, dolorum praesentium debitis eligendi!
-            </p>
+            <span id="cloud"><i class="ri-cloud-windy-fill"></i></i></span>
+            <span id="temp-c">32°F</span>
+            <div id="windchill">
+                Wind Speed: <span id="w-speed">10 MPH</span>
+                windchill: <span id="windchill-value"></span>
+            </div>
             
         </div>
         <div class="join">
             <div>
                 <h2>Join</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illo dignissimos quae. Maiores vitae voluptatibus tenetur laborum similique, 
-                    nihil enim sint voluptas laboriosam aperiam itaque harum dolorem?
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illo dignissimos quae. Maiores vitae voluptatibus tenetur laborum similique.
                 </p>
             </div>            
             <a href="#"><img src="images/join-img.svg" alt="I man with a sheet of paper"></a>            
@@ -113,7 +117,13 @@
         </div>
     </main>
     <footer>
-        <a href="#"><img src="images/clean-logo.png" alt=""></a>
+        <a href="#">
+            <picture>
+                <source type="image/webp" srcset="images/clean-logo.webp">
+                <source type="image/png" srcset="images/clean-logo.png">
+                <img src="images/clean-logo.png" alt="Emblem of El Progreso">    
+            </picture>
+        </a>
         <ul>
             <li><a href="#">Contact Us </a></li>
             <!-- scrip here gets the full year immediately -->
@@ -125,5 +135,6 @@
         </ul>      
     </footer>
     <script src="js/scripts.js" rel="stylesheet"></script>
+    <script src="js/windchill.js" rel="stylesheet"></script>
 </body>
 </html>
