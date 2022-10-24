@@ -46,14 +46,13 @@ header h1 {
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
-    padding-left: 0.2rem;
+    padding: 0 0.5rem;
 }
 
 header h3 {
     font-size: 0.8rem;
     text-align: right;
     margin: 1rem 0.5rem 0 0;
-
 }
 
 h3#banner {
@@ -61,6 +60,7 @@ h3#banner {
     color: whitesmoke;
     text-decoration: underline;
     padding: 1.2rem;
+    margin: .8rem;
 }
 
 .date {

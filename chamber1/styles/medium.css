@@ -6,7 +6,13 @@
 }
 
 @media only screen and (min-width: 35rem) {
-    
+    header h1 {
+        width: 70%;
+    }
+
+    header h3 {
+        font-size: 1rem;
+    }
 
     .main {
         display: grid;
