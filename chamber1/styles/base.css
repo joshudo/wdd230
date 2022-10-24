@@ -56,6 +56,13 @@ header h3 {
 
 }
 
+h3#banner {
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: underline;
+    padding: 1.2rem;
+}
+
 .date {
     font-size: 2vh;
 }
@@ -101,6 +108,7 @@ nav ul li.active a {
 
 nav ul li a:hover {
     background-color: #43b9a1c7;
+    font-size: 1.05rem;
 }
 
 nav ul {display: none;}
