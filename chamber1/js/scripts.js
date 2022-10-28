@@ -35,3 +35,37 @@ if (dayNow == "1" || dayNow == "2") {
 } else {
   document.getElementById("banner").style.display = "none";
 }
+
+const imgBeingLazy = document.querySelectorAll(".discovery-img")
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("show", entry.isIntersecting)
+    })
+  },
+  {
+    threshold: 1,
+  }
+)
+
+imgBeingLazy.forEach(img => {
+  observer.observe(img)
+})
+
+const timeBtwVisits = document.querySelector(".creepy-date");
+
+var visitTime = new Date();
+
+let lastVisit = new Date(localStorage.getItem("visit-time"));
+
+if (lastVisit.getTime() !== 0) {
+  var msDifference = visitTime.getTime() - lastVisit.getTime();
+  var daysSince = Math.round(msDifference/(1000*60*60*24));
+  
+  timeBtwVisits.textContent = "It's been " + daysSince + " days since your last visit!";
+} else {
+  timeBtwVisits.textContent = "Welcome to the discovery page!";
+}
+
+localStorage.setItem("visit-time", visitTime);
