@@ -136,6 +136,7 @@ nav ul.open {
 main {
   padding: 2rem;
   background-color: var(--content);
+  height: 100%;
 }
 
 main div {
@@ -243,15 +244,4 @@ footer ul {
 footer a {
   text-decoration: none;
   color: white;
-}
-
-.discovery-img {
-    transform: translateX(100px);
-    opacity: 0;
-    transition: 150ms;
-}
-
-.discovery-img.show {
-    transform: translateX(0);
-    opacity: 1;
 }

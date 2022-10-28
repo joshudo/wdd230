@@ -1,3 +1,5 @@
+/* Start of the nav bar code */
+
 function toggleMenu() {
   document.getElementById("nav-list").classList.toggle("open");
   document.getElementById("burger-btn").classList.toggle("open");
@@ -6,6 +8,10 @@ function toggleMenu() {
 const bwr = document.getElementById("burger-btn");
 
 bwr.onclick = toggleMenu;
+
+/* End of the nav bar code */
+
+/* Start of the last modified code */ 
 
 const datefieldUK = document.querySelector("#date");
 
@@ -28,6 +34,10 @@ let oLastModif = new Date(document.lastModified);
 document.getElementById("last-modified").textContent =
   oLastModif.toLocaleString("en-US", options);
 
+/* End of the last modified code */ 
+
+/* Start of the Mon & Tue Banner code */
+
 let dayNow = now.getDay();
 
 if (dayNow == "1" || dayNow == "2") {
@@ -36,30 +46,49 @@ if (dayNow == "1" || dayNow == "2") {
   document.getElementById("banner").style.display = "none";
 }
 
-const imgBeingLazy = document.querySelectorAll(".discovery-img")
+/* End of the Mon & Tue Banner code */
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      entry.target.classList.toggle("show", entry.isIntersecting)
-    })
-  },
-  {
-    threshold: 1,
-  }
-)
+/* Start of the lazy loading code */
 
-imgBeingLazy.forEach(img => {
-  observer.observe(img)
-})
+let imagesToLoad = document.querySelectorAll("img[data-src]");
 
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
+
+/* End of the lazy loading code */
+
+/* Start of the days per visit code */
 const timeBtwVisits = document.querySelector(".creepy-date");
 
 var visitTime = new Date();
 
 let lastVisit = new Date(localStorage.getItem("visit-time"));
 
-if (lastVisit.getTime() !== 0) {
+if (lastVisit.getHours() < 24 && lastVisit.getHours() > 1) {
+  timeBtwVisits.textContent = "Not a full day has passed yet!";
+} else if (lastVisit.getHours() > 23.99) {
   var msDifference = visitTime.getTime() - lastVisit.getTime();
   var daysSince = Math.round(msDifference/(1000*60*60*24));
   
@@ -69,3 +98,5 @@ if (lastVisit.getTime() !== 0) {
 }
 
 localStorage.setItem("visit-time", visitTime);
+
+/* End of the days per visit code */ 

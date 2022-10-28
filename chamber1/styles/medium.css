@@ -68,22 +68,22 @@
         height: 90%;
     }
 
-    main .hero {
+    .main .hero {
         text-align: center;
     }
 
-    main.hero picture {
+    .main.hero picture {
         width: 80%;
         
     }
 
-    main .hero picture.hero-img img {
+    .main .hero picture.hero-img img {
         width: 75%;
         
         margin: 1rem 3rem 3rem 1rem;
     }
 
-    main div.news span {
+    .main div.news span {
         float: left;
         font-size: 13rem;
         margin-right: 3rem;
