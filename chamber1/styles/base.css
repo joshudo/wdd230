@@ -125,7 +125,7 @@ main {
     background-color: var(--content);
 }
 
-main div {
+.main div {
     margin: 1.2rem;
     padding: 1rem;
     background-color: whitesmoke;
@@ -134,7 +134,7 @@ main div {
     border-radius: 5px;
 }
 
-main .hero picture.hero-img {
+.main .hero picture.hero-img {
     height: 50%;
     float: top;
 }
@@ -143,42 +143,42 @@ main .hero picture.hero-img {
     width: 100%;
 }
 
-main div.news span {
+.main div.news span {
     float: left;
     font-size: 9rem;
 }
 
-main div.events span {
+.main div.events span {
     float: right;
     font-size: 9rem;
 }
 
-div.weather {
+.main div.weather {
     display: grid;    
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 30% 50%;
 }
 
-div.weather h2 {
+.main div.weather h2 {
     grid-column: 1/-1;
     grid-row: 1/2;
 }
 
-div.weather span#cloud {
+.main div.weather span#cloud {
     grid-column: 1/2;
     grid-row: 2/3;
     float: left;
     font-size: 9rem;
 }
 
-div.weather span#temp-c {
+.main div.weather span#temp-c {
     font-size: 3rem;
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
 }
 
-div.weather div#windchill {
+.main div.weather div#windchill {
     grid-column: 1/-1;
     grid-row: 3/4;
     display: flex;
