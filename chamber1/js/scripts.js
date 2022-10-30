@@ -83,19 +83,21 @@ if ("IntersectionObserver" in window) {
 const timeBtwVisits = document.querySelector(".creepy-date");
 
 var visitTime = new Date();
+console.log(visitTime)
 
 let lastVisit = new Date(localStorage.getItem("visit-time"));
 
-if (lastVisit.getHours() < 24 && lastVisit.getHours() > 1) {
-  timeBtwVisits.textContent = "Not a full day has passed yet!";
-} else if (lastVisit.getHours() > 23.99) {
-  var msDifference = visitTime.getTime() - lastVisit.getTime();
-  var daysSince = Math.round(msDifference/(1000*60*60*24));
-  
-  timeBtwVisits.textContent = "It's been " + daysSince + " days since your last visit!";
-} else {
+console.log(lastVisit)
+
+var msDifference = visitTime.getTime() - lastVisit.getTime();
+var daysSince = Math.round(msDifference/(1000*60*60*24));
+
+if (daysSince < 1){
   timeBtwVisits.textContent = "Welcome to the discovery page!";
-}
+} else {    
+  timeBtwVisits.textContent = "It's been " + daysSince + " days since your last visit!";
+} 
+console.log(daysSince)
 
 localStorage.setItem("visit-time", visitTime);
 

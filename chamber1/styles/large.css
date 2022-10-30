@@ -123,4 +123,19 @@
         text-decoration: none;
         color: white;
     }
+
+    main.discovery div.the-grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    main.discovery section.image-description {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      main.discovery div.the-grid div#demographics {
+        display: flex;
+        flex-direction: column;
+      }
 }

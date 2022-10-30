@@ -143,7 +143,7 @@ main div {
   border: 1px solid var(--bg);
 }
 
-.main div {
+main div {
   margin: 1.2rem;
   padding: 1rem;
   background-color: whitesmoke;
@@ -153,7 +153,6 @@ main div {
 
 .main .hero picture.hero-img {
   height: 50%;
-  float: top;
 }
 
 .hero picture.hero-img img {
@@ -244,4 +243,26 @@ footer ul {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/* styles for the discovery page */ 
+
+main #h2-discovery {
+  font-size: 3rem;
+  text-align: center;
+}
+
+section.image-description p {
+  text-align: center;
+}
+
+section.image-description picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+section.image-description picture img:hover {
+  box-shadow: 10px 10px 20px 2px var(--main-color);
 }
