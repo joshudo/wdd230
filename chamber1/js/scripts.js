@@ -87,7 +87,11 @@ console.log(visitTime)
 
 let lastVisit = new Date(localStorage.getItem("visit-time"));
 
-console.log(lastVisit)
+if ( lastVisit.getTime() == 0) {
+  lastVisit = new Date();
+}
+
+console.log(lastVisit.getTime())
 
 var msDifference = visitTime.getTime() - lastVisit.getTime();
 var daysSince = Math.round(msDifference/(1000*60*60*24));
