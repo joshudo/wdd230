@@ -144,4 +144,21 @@
         margin-left: 0;
         padding-right: 0;
     }
+    
+    main.discovery div.the-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    } 
+    
+    main.discovery div.the-grid div#demographics {
+        grid-row: 1/2;
+        height: fit-content;
+    }
+    
+    main.discovery div.the-grid section {
+        grid-row: 2/3;
+        height: fit-content;
+    }
+
 }

@@ -124,18 +124,10 @@
         color: white;
     }
 
-    main.discovery div.the-grid {
-        display: grid;
-        grid-template-columns: 60% 40%;
-    }
+    /* Start of the discover code */
 
-    main.discovery section.image-description {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      main.discovery div.the-grid div#demographics {
-        display: flex;
-        flex-direction: column;
-      }
+    main.discovery div.the-grid {
+        display: flex;        
+        justify-content: space-evenly;
+    }
 }

@@ -247,7 +247,21 @@ footer a {
 
 /* styles for the discovery page */ 
 
-main #h2-discovery {
+main.discovery div.the-grid{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+} 
+
+main.discovery div.the-grid div#demographics {
+  grid-row: 1/2; 
+}
+
+main.discovery div.the-grid section {
+  grid-row: 2/3;
+}
+
+main.discovery #h2-discovery {
   font-size: 3rem;
   text-align: center;
 }
@@ -261,6 +275,7 @@ section.image-description picture img {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  border-radius: 5px;
 }
 
 section.image-description picture img:hover {
