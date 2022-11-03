@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/tablecss.css">
+    <title>Assignment 8</title>
+</head>
+<body>
+    <h1>HTML Table Build</h1>
+
+    <table>
+        <caption>Table 1: Wasatch Sales</caption>
+        
+        <thead>
+            <!--This is the head title of the table-->
+            <tr>
+                <!--
+                    colspan, sums the cell span acroos
+                    scope, tells the header what hearder it's a header for
+                    colgroup, used for heading used for multiple columns or rows
+                -->                
+                <th colspan="2" scope="colgroup">Sales</th>
+            </tr>
+            <tr>
+                <!--col, defines a column within a table and is used for 
+                defining common semantics on all common cells-->
+                <th scope="col">Month</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>July</td>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td class="highlight">8,000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>4,000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>2,000</td>
+            </tr>
+        </tbody>
+        
+        <tr>
+
+        </tr>
+    </table>
+</body>
+</html>

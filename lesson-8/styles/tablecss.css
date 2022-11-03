@@ -1,0 +1,56 @@
+:root {
+    --background: #0B0C10;
+    --shadow: #1F2833;
+    --back: #C5C6C7;
+    --back1: #66FCF1;
+    --back2: #45A29E;
+    --border: rgba(245, 245, 245, 0.904);
+    --tex: rgb(241, 240, 240);
+}
+body {
+    background-color: var(--background);
+}
+
+h1 {
+    text-align: center;
+    color: var(--tex);
+}
+
+table {
+    margin: 15px auto;
+    padding: 2px;
+    border: 2px solid var(--border) ;
+    box-shadow: 0 0 30px var(--shadow);
+    border-collapse: collapse;
+    font-size: 2rem;
+    background-color: var(--back);
+}
+
+caption {
+    padding: 15px;
+    caption-side: bottom;
+    color: var(--tex);
+    font-size: 1rem;
+}
+
+tr:first-child th, .highlight {
+    background-color: var(--shadow);
+    color: var(--tex);
+}
+
+th, td {
+    padding: 9px 15px;
+    border: 3px solid var(--border);
+}
+
+th {
+    background-color: var(--back2);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--back1);
+}
