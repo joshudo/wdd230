@@ -29,6 +29,9 @@ const options = {
   year: "numeric",
 };
 
+const justYear = document.querySelector("#theYear");
+justYear.textContent = now.getFullYear();
+
 let oLastModif = new Date(document.lastModified);
 
 document.getElementById("last-modified").textContent =
@@ -52,6 +55,11 @@ if (dayNow == "1" || dayNow == "2") {
 
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 50px 0px"
+};
+
 const loadImages = (image) => {
   image.setAttribute("src", image.getAttribute("data-src"));
   image.onload = () => {
@@ -67,7 +75,7 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(item.target);
       }
     });
-  });
+  }, imgOptions);
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
@@ -83,7 +91,7 @@ if ("IntersectionObserver" in window) {
 const timeBtwVisits = document.querySelector(".creepy-date");
 
 var visitTime = new Date();
-console.log(visitTime)
+/*console.log(visitTime)*/
 
 let lastVisit = new Date(localStorage.getItem("visit-time"));
 
@@ -91,7 +99,7 @@ if ( lastVisit.getTime() == 0) {
   lastVisit = new Date();
 }
 
-console.log(lastVisit.getTime())
+/*console.log(lastVisit.getTime())*/
 
 var msDifference = visitTime.getTime() - lastVisit.getTime();
 var daysSince = Math.round(msDifference/(1000*60*60*24));
@@ -101,7 +109,7 @@ if (daysSince < 1){
 } else {    
   timeBtwVisits.textContent = "It's been " + daysSince + " days since your last visit!";
 } 
-console.log(daysSince)
+/*console.log(daysSince)*/
 
 localStorage.setItem("visit-time", visitTime);
 
