@@ -69,6 +69,12 @@
         padding: 1rem;
         display: block        
     }
+    .main div.weather span#cloud i {
+        display: block;
+        padding-bottom: 2rem;
+        
+        height: fit-content;
+    }
 
     .main div.weather div#windchill {
         margin-left: auto;
@@ -95,11 +101,21 @@
     .main div.join {
         display: flex;
         flex-direction: column;
-        height: 95%;
+        height: fit-content;
+        
+    }
+
+    .main div.join div {
+        display: block;
+        height: fit-content;
     }
 
     .main div.join img {
-        height: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 73%;
+        
     }
 
     footer {
