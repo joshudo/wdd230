@@ -70,15 +70,25 @@
         display: block        
     }
 
+    .main div.weather div#windchill {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .main div.spotlights img#img-spot-1 {
         float: right;
-        height: 10rem;
+        height: 8rem;
         margin-left: 1rem;
     }
     
     .main div.spotlights img#img-spot-2 {
         float: left;
-        height: 10rem;
+        height: 8rem;
         margin-right: 1rem;
     }
 
