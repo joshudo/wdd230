@@ -314,9 +314,8 @@ main.join div.the-levels {
 }
 
 main.join div.the-levels table {
-  width: 100%;
+  width: 80%;
 }
-
 
 main.join select,
 main.join option,
@@ -343,7 +342,8 @@ form legend {
 
 form label.top,
 form div {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding-top: 1rem;
   color: #9c2c13;
   font-size: 0.8rem;
@@ -352,7 +352,8 @@ form div {
 form label.top input,
 form label.top select {
   -webkit-appearance: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
   border: solid 1px #999;
   border-radius: 4px;
@@ -361,12 +362,6 @@ form label.top select {
   width: 100%;
   max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-form label.sbs {
-  display: block;
-  padding: 0.75rem 0;
-  color: #555;
 }
 
 form input.submitBtn {
