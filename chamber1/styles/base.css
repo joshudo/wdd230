@@ -308,8 +308,15 @@ section.image-description picture img:hover {
 }
 
 /*--------------------- Start Join ---------------------*/
-main.join div.the-form {
+main.join div.the-levels {
+  align-items: center;
+  text-align: center;
 }
+
+main.join div.the-levels table {
+  width: 100%;
+}
+
 
 main.join select,
 main.join option,
@@ -364,7 +371,7 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: #9c2c13;
+  background-color: var(--main-color);
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -379,6 +386,11 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+main.thanks {
+  text-align: center;
+  height: 60vh;
 }
 
 /*--------------------- End Join ---------------------*/
