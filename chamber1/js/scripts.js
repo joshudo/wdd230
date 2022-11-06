@@ -49,9 +49,9 @@ if (dayNow == "1" || dayNow == "2") {
   document.getElementById("banner").style.display = "none";
 }
 
-/* End of the Mon & Tue Banner code */
+/*---------------- End of the Mon & Tue Banner code ----------------*/
 
-/* Start of the lazy loading code */
+/*---------------- Start of the lazy loading code ----------------*/
 
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
@@ -85,9 +85,9 @@ if ("IntersectionObserver" in window) {
   });
 }
 
-/* End of the lazy loading code */
+/*---------------- End of the lazy loading code ----------------*/
 
-/* Start of the days per visit code */
+/*---------------- Start of the days per visit code ----------------*/
 const timeBtwVisits = document.querySelector(".creepy-date");
 
 var visitTime = new Date();
@@ -113,4 +113,4 @@ if (daysSince < 1){
 
 localStorage.setItem("visit-time", visitTime);
 
-/* End of the days per visit code */ 
+/*---------------- End of the days per visit code ----------------*/ 

@@ -156,4 +156,12 @@
         display: flex;        
         justify-content: space-evenly;
     }
+
+    /*------------------------------ From Start ------------------------------*/
+    
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    /*------------------------------ From End ------------------------------*/
 }
