@@ -2,6 +2,14 @@ body {
     text-align: center;
 }
 
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
 main div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
