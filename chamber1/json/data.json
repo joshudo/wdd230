@@ -1,0 +1,94 @@
+{
+    "companies": [
+        {
+            "name": "Berkshire Hathway",
+            "addresses": "3555 Farnam Street Omaha, NE 68131",
+            "phonenumber": "456789123",
+            "url": "https://www.berkshirehathaway.com/",
+            "img": "../images/directory img/berkshire-logo.png",
+            "membership": "NP Membership",
+            "founder": "Oliver Chace",
+            "revenue": "89.8 billion USD"
+        },
+        {
+            "name": "Saudi Aramco",
+            "addresses": "Dhahran, Saudi Arabia",
+            "phonenumber": "489156573",
+            "url": "https://www.aramco.com/",
+            "img": "../images/directory img/saudi.png",
+            "membership": "Gold Membership",
+            "founder": "Amin H. Nasser",
+            "revenue": "359.2 billion USD"
+        },
+        {
+            "name": "Meta",
+            "addresses": "Menlo Park, California, United States",
+            "phonenumber": "962074120",
+            "url": "https://about.meta.com/",
+            "img": "../images/directory img/meta.png",
+            "membership": "Bronze Membership",
+            "founder": "Mark Zuckerberg",
+            "revenue": "85.96 billion USD"
+        },
+        {
+            "name": "Amazon",
+            "addresses": "Bellevue, Washington, United States",
+            "phonenumber": "784932436",
+            "url": "https://www.amazon.com/",
+            "img": "../images/directory img/amazon.png",
+            "membership": "Silver Membership",
+            "founder": "Jeff Bezos",
+            "revenue": "33.36 billion USD"
+        },
+        {
+            "name": "Alibaba Group",
+            "addresses": "Hangzhou, China",
+            "phonenumber": "235889115",
+            "url": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi87qa2gp37AhXExoYKHQfyBgsYABAAGgJ2dQ&ohost=www.google.com&cid=CAESauD2JCN-Ixso0Dcd1ppTxsDJwYyDqHksB3EGCDcJ5VA6zLCUv-Y8frFs9X5cSeOAebdd52qiGG22exsJ2r7xrjOGGlaZx4HEr_-Gf43Yyk2HIwxbjQNGG3y0vNLvY3mLHnUIpb0zeh8zqW0&sig=AOD64_29WrsBFM9vIJri_5lRVpkGh0sSAQ&q&adurl&ved=2ahUKEwjwhqG2gp37AhWHpIQIHY5MALYQ0Qx6BAgJEAE",
+            "img": "../images/directory img/alibaba.png",
+            "membership": "Gold Membership",
+            "founder": "Jack Ma",
+            "revenue": "852.88 billion USD"
+        },
+        {
+            "name": "Tesla",
+            "addresses": " San Carlos, California, United States",
+            "phonenumber": "985624489",
+            "url": "https://www.tesla.com/",
+            "img": "images/directory img/tesla.png",
+            "membership": "Silver Membership",
+            "founder": " Elon Musk",
+            "revenue": "18.76 billion USD"
+        },
+        {
+            "name": "Tencent",
+            "addresses": "Cayman Islands",
+            "phonenumber": "984512541",
+            "url": "https://www.tencent.com/en-us/",
+            "img": "images/directory img/tence.png",
+            "membership": "Gold Membership",
+            "founder": "Ma Huateng",
+            "revenue": "482.1 billion CNY"
+        },
+        {
+            "name": "Microsoft",
+            "addresses": " Albuquerque, New Mexico, United States",
+            "phonenumber": "965274527",
+            "url": "https://www.microsoft.com/es-hn/",
+            "img": "images/directory img/microsoft.png",
+            "membership": "NP Membership",
+            "founder": "Bill Gates",
+            "revenue": "168 billion USD"
+        },
+        {
+            "name": "Apple",
+            "addresses": "Cupertino, California, United States",
+            "phonenumber": "956207410",
+            "url": "https://www.apple.com/",
+            "img": "images/directory img/apple.png",
+            "membership": "Silver Membership",
+            "founder": "Steve Jobs",
+            "revenue": "394 billion USD"
+        }
+    ]
+}
