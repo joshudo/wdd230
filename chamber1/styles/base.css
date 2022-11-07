@@ -286,9 +286,13 @@ main.discovery div.the-grid section {
   grid-row: 2/3;
 }
 
-main.discovery #h2-discovery {
-  font-size: 3rem;
+main.discovery div.cuidad {
+  font-size: 1rem;
   text-align: center;
+}
+
+main.discovery div.cuidad h2 {
+  font-size: 3rem;
 }
 
 section.image-description p {
