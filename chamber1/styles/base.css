@@ -270,6 +270,11 @@ footer a {
 
 /*------------------------ styles for the discovery page ------------------------*/
 
+main.discovery {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--content);
+}
+
 main.discovery div.the-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -310,8 +315,15 @@ section.image-description picture img {
 section.image-description picture img:hover {
   box-shadow: 10px 10px 20px 2px var(--main-color);
 }
+/*------------------------ styles for the discovery page ------------------------*/
+
 
 /*--------------------- Start Join ---------------------*/
+main.join {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--content);
+}
+
 main.join div.the-levels {
   align-items: center;
   text-align: center;
@@ -427,10 +439,12 @@ main.directory div {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  background-color: var(--bg);
 }
 
 main.directory div section {
   border: 1px solid var(--bg);
+  background-color: var(--content);
   display: flex;
   flex-direction: column;
   text-align: center;
