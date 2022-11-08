@@ -145,7 +145,7 @@
         margin-left: 0;
         padding-right: 0;
     }
-    
+    /*----------------------------------- Discovery Code -----------------------------------*/
     main.discovery div.the-grid{
         display: grid;
         grid-template-columns: 100%;
@@ -161,5 +161,7 @@
         grid-row: 2/3;
         height: fit-content;
     }
+
+    /*----------------------------------- Discovery Code -----------------------------------*/
 
 }
