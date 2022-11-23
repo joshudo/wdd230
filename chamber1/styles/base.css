@@ -447,7 +447,7 @@ main.directory div section {
   background-color: var(--content);
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   margin: 1rem 2rem;
   padding: .8rem;
   height: 60vh;
@@ -456,6 +456,7 @@ main.directory div section {
 
 main.directory div section img {
   padding: 1rem;
+  width: 50%;
   border-radius: 20px;
 }
 

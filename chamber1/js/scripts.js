@@ -104,7 +104,7 @@ var msDifference = visitTime.getTime() - lastVisit.getTime();
 var daysSince = Math.round(msDifference/(1000*60*60*24));
 
 if (daysSince < 1){
-  timeBtwVisits.textContent = "Welcome to the discovery page!";
+  timeBtwVisits.textContent = `Welcome to the discovery page!`;
 } else {    
   timeBtwVisits.textContent = "It's been " + daysSince + " days since your last visit!";
 } 
