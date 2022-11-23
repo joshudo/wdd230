@@ -141,17 +141,17 @@ nav ul.open {
   display: block;
 }
 
-#burger-btn span:nth-child(1) {
+#burgerBtn span:nth-child(1) {
   display: block;
 }
-#burger-btn span:nth-child(2) {
+#burgerBtn span:nth-child(2) {
   display: none;
 }
 
-#burger-btn.open span:nth-child(1) {
+#burgerBtn.open span:nth-child(1) {
   display: none;
 }
-#burger-btn.open span:nth-child(2) {
+#burgerBtn.open span:nth-child(2) {
   display: block;
 }
 
@@ -324,12 +324,12 @@ main.join {
   border-bottom: 1px solid var(--content);
 }
 
-main.join div.the-levels {
+main.join div.theLevels {
   align-items: center;
   text-align: center;
 }
 
-main.join div.the-levels table {
+main.join div.theLevels table {
   width: 80%;
 }
 
