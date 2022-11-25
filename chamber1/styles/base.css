@@ -15,6 +15,9 @@ header,
 nav,
 footer {
   font-family: "Open Sans", sans-serif;
+  padding: 0.2rem 1rem;
+  margin: 0.2rem auto;
+  border-bottom: 1px solid var(--border);
 }
 
 p {
@@ -36,7 +39,7 @@ header {
 }
 
 header img {
-  height: 4rem;
+  height: 8rem;
   background: #e7e5df;
   border-radius: 15px;
 }
@@ -173,21 +176,28 @@ main div {
   border-radius: 5px;
 }
 
-.main .hero picture.hero-img {
+main.main a#join {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.firstColumn, div.secondColumn, div.thirdColumn {
+  background-color: var(--bg);
+}
+
+.main .hero picture.heroImg {
   height: 50%;
 }
 
-.hero picture.hero-img img {
+.hero picture.heroImg img {
   width: 100%;
 }
 
 .main div.news span {
-  float: left;
   font-size: 9rem;
 }
 
 .main div.events span {
-  float: right;
   font-size: 9rem;
 }
 
@@ -223,20 +233,21 @@ main div {
   flex-direction: column;
   padding-right: 0;
   height: 80%;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 5rem;
 }
 
 .main div.spotlights {
   padding-bottom: 5rem;
 }
 
-.main div.spotlights img#img-spot-1 {
+.main div.spotlights img#img-spot1 {
   float: right;
   height: 12rem;
   margin-left: 3rem;
 }
 
-.main div.spotlights img#img-spot-2 {
+.main div.spotlights img#img-spot2 {
   float: left;
   height: 12rem;
   margin-right: 3rem;
@@ -322,6 +333,11 @@ section.image-description picture img:hover {
 main.join {
   background-color: var(--bg);
   border-bottom: 1px solid var(--content);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 96%;
 }
 
 main.join div.theLevels {
@@ -409,21 +425,21 @@ main.thanks {
 
 /*--------------------- Start directory ---------------------*/
 
-#list-grid-btn span {
+#listGridBtn span {
   font-size: 2rem;
 }
 
-#list-grid-btn span:nth-child(1) {
+#listGridBtn span:nth-child(1) {
   display: block;
 }
-#list-grid-btn span:nth-child(2) {
+#listGridBtn span:nth-child(2) {
   display: none;
 }
 
-#list-grid-btn.list span:nth-child(1) {
+#listGridBtn.list span:nth-child(1) {
   display: none;
 }
-#list-grid-btn.list span:nth-child(2) {
+#listGridBtn.list span:nth-child(2) {
   display: block;
 }
 
@@ -448,6 +464,7 @@ main.directory div section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   margin: 1rem 2rem;
   padding: .8rem;
   height: 60vh;
@@ -463,6 +480,10 @@ main.directory div section img {
 main.directory div.list {
   display: flex;
   flex-direction: column;
+}
+
+main.directory div.list img {
+  width: fit-content;
 }
 
 main.directory div.list section {

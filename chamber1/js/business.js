@@ -38,8 +38,8 @@ function displayCompanies(companies) {
 
 function toggleView() {
     document.querySelector('#cards').classList.toggle('list');
-    document.querySelector("#list-grid-btn").classList.toggle('list');
+    document.querySelector("#listGridBtn").classList.toggle('list');
 }
 
-const listgridBtn = document.querySelector('#list-grid-btn');
+const listgridBtn = document.querySelector('#listGridBtn');
 listgridBtn.onclick = toggleView;
