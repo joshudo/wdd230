@@ -330,6 +330,10 @@ section.image-description picture img:hover {
 
 
 /*--------------------- Start Join ---------------------*/
+form, main.join form div {
+  font-size: 1.8rem;
+}
+
 main.join {
   background-color: var(--bg);
   border-bottom: 1px solid var(--content);
@@ -359,12 +363,13 @@ main.join button {
   color: inherit;
 }
 
-form fieldset {
+form fieldset, form ul {
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
 }
+
 
 form legend {
   color: black;
@@ -496,6 +501,33 @@ main.directory div.list section {
   height: 50vh;
 }
 
+/*--------------------- Stop directory ---------------------*/
 
+/*--------------------- Start Contact ---------------------*/
 
-/*--------------------- Start directory ---------------------*/
+main.contact legend {
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+
+main.contact div.myInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+main.contact div.myInfo hr {
+  height: 2px;
+  border-width: 1px;
+  color: var(--content);
+  background-color: var(--bg);
+  
+}
+
+main.contact div.contactMe img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: 8px 5px 10px #888888;
+  border-radius: 15px;
+}

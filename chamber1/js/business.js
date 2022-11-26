@@ -1,6 +1,9 @@
 const requestData = "./json/data.json";
 const cards = document.querySelector('#cards');
 
+
+console.log(requestData);
+
 fetch(requestData)
     .then(function(response){
         return response.json();
@@ -34,6 +37,15 @@ function displayCompanies(companies) {
     card.appendChild(founder);
 
     document.querySelector('div#cards').appendChild(card);
+}
+
+function displayAds(companies){
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let logo = document.createElement('img');
+
+
+
 }
 
 function toggleView() {

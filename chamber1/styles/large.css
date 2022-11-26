@@ -161,4 +161,18 @@
 
 
   /*----------------------------------- Directory Code -----------------------------------*/
+  main.contact div.contactMe {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  main.contact form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  /*----------------------------------- Contact Code -----------------------------------*/
 }
