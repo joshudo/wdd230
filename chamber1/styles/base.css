@@ -176,6 +176,20 @@ main div {
   border-radius: 5px;
 }
 
+main.main div.thirdColumn div.spotlights section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--bg);
+  padding: 3rem;
+  
+}
+
+main.main div.thirdColumn div.spotlights section img {
+  width: 80%;
+}
+
 main.main a#join {
   text-decoration: none;
   color: inherit;
@@ -233,24 +247,8 @@ div.firstColumn, div.secondColumn, div.thirdColumn {
   flex-direction: column;
   padding-right: 0;
   height: 80%;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 5rem;
-}
-
-.main div.spotlights {
-  padding-bottom: 5rem;
-}
-
-.main div.spotlights img#img-spot1 {
-  float: right;
-  height: 12rem;
-  margin-left: 3rem;
-}
-
-.main div.spotlights img#img-spot2 {
-  float: left;
-  height: 12rem;
-  margin-right: 3rem;
 }
 
 footer {
@@ -292,6 +290,7 @@ main.discovery div.the-grid {
   grid-template-rows: auto auto;
   border: none;
   background-color: var(--content);
+  margin: 2rem;
 }
 
 main.discovery div.the-grid div#demographics {
