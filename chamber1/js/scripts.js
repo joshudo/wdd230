@@ -1,7 +1,7 @@
 /*-------------------------- Start of the nav bar code --------------------------*/
 
 function toggleMenu() {
-  document.getElementById("nav-list").classList.toggle("open");
+  document.getElementById("navList").classList.toggle("open");
   document.getElementById("burgerBtn").classList.toggle("open");
 }
 
@@ -34,7 +34,7 @@ justYear.textContent = now.getFullYear();
 
 let oLastModif = new Date(document.lastModified);
 
-document.getElementById("last-modified").textContent =
+document.getElementById("lastModified").textContent =
   oLastModif.toLocaleString("en-US", options);
 
 /*-------------------------- End of the last modified code --------------------------*/ 
@@ -51,41 +51,5 @@ if (dayNow == "1" || dayNow == "2") {
 
 /*---------------- End of the Mon & Tue Banner code ----------------*/
 
-/*---------------- Start of the lazy loading code ----------------*/
 
-
-let imagesToLoad = document.querySelectorAll("img[data-src]");
-
-const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 50px 0px"
-};
-
-const loadImages = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
-  image.onload = () => {
-    image.removeAttribute("data-src");
-  };
-};
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        loadImages(item.target);
-        observer.unobserve(item.target);
-      }
-    });
-  }, imgOptions);
-  imagesToLoad.forEach((img) => {
-    observer.observe(img);
-  });
-} else {
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
-}
-
-
-/*---------------- End of the lazy loading code ----------------*/
 

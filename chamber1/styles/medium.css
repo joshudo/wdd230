@@ -41,18 +41,18 @@
         border-left: 1px solid white;
     }
     /*----------------------------------- Discovery Code -----------------------------------*/
-    main.discovery div.the-grid{
+    main.discovery div.theGrid{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto;
     } 
     
-    main.discovery div.the-grid div#demographics {
+    main.discovery div.theGrid div#demographics {
         grid-row: 1/2;
         height: fit-content;
     }
     
-    main.discovery div.the-grid section {
+    main.discovery div.theGrid section {
         grid-row: 2/3;
         height: fit-content;
     }

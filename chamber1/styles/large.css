@@ -75,13 +75,13 @@
     justify-content: center;
   }
 
-  .main div.spotlights img#img-spot1 {
+  .main div.spotlights img#imgSpot1 {
     float: right;
     height: 8rem;
     margin-left: 1rem;
   }
 
-  .main div.spotlights img#img-spot2 {
+  .main div.spotlights img#imgSpot2 {
     float: left;
     height: 8rem;
     margin-right: 1rem;
@@ -133,7 +133,7 @@
     margin-right: auto;
     width: 80%;
   }
-  main.discovery div.the-grid {
+  main.discovery div.theGrid {
     display: flex;
     margin-left: auto;
     margin-right: auto;

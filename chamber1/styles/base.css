@@ -96,7 +96,7 @@ nav button {
   color: rgb(63, 62, 62);
 }
 
-nav ul#nav-list {
+nav ul#navList {
   /*------------------------
   removing the bullet points for the items 
   ------------------------*/
@@ -284,7 +284,7 @@ main.discovery {
   border-bottom: 1px solid var(--content);
 }
 
-main.discovery div.the-grid {
+main.discovery div.theGrid {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
@@ -293,11 +293,11 @@ main.discovery div.the-grid {
   margin: 2rem;
 }
 
-main.discovery div.the-grid div#demographics {
+main.discovery div.theGrid div#demographics {
   grid-row: 1/2;
 }
 
-main.discovery div.the-grid section {
+main.discovery div.theGrid section {
   grid-row: 2/3;
 }
 
@@ -310,11 +310,11 @@ main.discovery div.cuidad h2 {
   font-size: 3rem;
 }
 
-section.image-description p {
+section.imageDescription p {
   text-align: center;
 }
 
-section.image-description picture img {
+section.imageDescription picture img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -322,7 +322,7 @@ section.image-description picture img {
   border-radius: 5px;
 }
 
-section.image-description picture img:hover {
+section.imageDescription picture img:hover {
   box-shadow: 10px 10px 20px 2px var(--main-color);
 }
 /*------------------------ styles for the discovery page ------------------------*/
