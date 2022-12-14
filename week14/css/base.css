@@ -1,0 +1,173 @@
+:root {
+    --main-color: #fbe8a6;
+    --content00: #f4976c;
+    --content01: #303c6c;
+    --border: #b4dfe5;
+    --background: #d2fdff;
+}
+
+body {
+    background-color: var(--background);    
+}
+
+div {
+    margin: 0;
+    text-align: center;
+}
+
+header, footer, nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, span, div {
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    background-color: var();
+}
+
+a {
+    text-decoration: none;
+    color: var(--content00);
+}
+
+header {
+    background-color: var(--content01);
+    background-image: url("../img/raw/blueberries.jpg");
+    background-blend-mode: lighten;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header div#headline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+header div#headline h1, div#headline h2 {
+    margin: 5rem auto;
+    color: white
+}
+
+
+header div#headline button a {
+    color: var(--content00);
+}
+
+header div#contactEmail {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+header#main div#logoNEmail {
+    display: block;
+    margin: 0;
+    background-color: var(--main-color);
+    padding: 1rem 0 0;
+}
+
+div#navNlogoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 1rem;
+}
+
+div#navNlogoContainer img {
+    width: 35%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    background-color: var(--background);
+    border-radius: 30px;
+    margin: auto;
+}
+
+div#navNlogoContainer div#socialMedia ul {
+    display: flex;
+    font-size: 1.8rem;    
+    gap: 2rem;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--background);
+    padding: 1rem;    
+    border-radius: 30px;
+    border: 5px solid var(--border);
+}
+
+nav {
+    background-color: var(--border);
+}
+
+nav button {
+    color: var(--content01);
+    border: 2px solid var(--content01);
+    margin: 1rem;
+    padding: 5px;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+    text-align: center;
+    padding: 0;
+    background-color: var(--background);    
+
+}
+
+nav ul.open li {    
+    display: block;
+    border-top: 1px solid var(--content01);
+    padding: 10px;
+}
+
+nav ul.open a {
+    color: var(--content00);
+    font-size: 1.5rem;
+}
+
+nav ul li.active {
+    background-color: var(--main-color);
+    color: var(--content01);
+}
+
+#burgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#burgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#burgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#burgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+
