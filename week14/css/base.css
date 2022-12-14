@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: var(--background);    
+    background-color: var(--background);
+    text-align: center;
 }
 
 div {
@@ -81,9 +82,9 @@ header#main div#logoNEmail {
 
 div#navNlogoContainer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: auto 1rem;
+    margin: 1rem 1rem;
+    padding: 0.5rem;
 }
 
 div#navNlogoContainer img {
@@ -117,6 +118,7 @@ button {
 
 nav {
     background-color: var(--border);
+    text-align: start;
 }
 
 nav button {
@@ -170,4 +172,32 @@ nav ul li.active {
     display: block;
 }
 
+footer {
+    display: flex;    
+    font-size: 0.6rem;
+    padding: 2rem 0.8rem;
+    background-color: var(--content00);
+}
 
+footer ul {
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+footer ul li {
+    text-align: left;
+}
+
+footer ul#links li a{
+    padding: 0.2rem;   
+    font-size: 0.8rem;
+    color: black;
+    margin: 0.3rem auto;
+}
+
+footer img {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+}
