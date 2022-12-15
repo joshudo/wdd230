@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <title>Fresh</title>
   </head>
   <body>
@@ -57,39 +57,38 @@
       <div id="headline">
         <h1>Bountiful Foods</h1>
         <h2>Go ahead and start creating your drink!</h2>
-        
       </div>
     </header>
     <main>
-      <form>
+      <form id="myForm">
         <label>
           First name:
-          <input type="text" name="first-name" required />
+          <input type="text" name="first-name" id="fname" required />
         </label>
         <br />
         <label>
           Email:
-          <input type="email" name="email" required />
+          <input type="email" name="email" id="email" required />
         </label>
         <br />
         <label>
           Phone:
-          <input type="tel" name="phone" required />
+          <input type="tel" name="phone" id="phone" required />
         </label>
         <br />
         <label>
           Select your fruits:
-          <select name="fruit1">
+          <select name="fruit1" id="fruit1">
             <option value="apple">Apple</option>
             <option value="banana">Banana</option>
             <option value="orange">Orange</option>
           </select>
-          <select name="fruit2">
+          <select name="fruit2" id="fruit2">
             <option value="apple">Apple</option>
             <option value="banana">Banana</option>
             <option value="orange">Orange</option>
           </select>
-          <select name="fruit3">
+          <select name="fruit3" id="fruit3">
             <option value="apple">Apple</option>
             <option value="banana">Banana</option>
             <option value="orange">Orange</option>
@@ -98,11 +97,14 @@
         <br />
         <label>
           Special instructions:
-          <textarea name="instructions"></textarea>
+          <textarea name="instructions" id="textarea"></textarea>
         </label>
         <br />
         <button type="submit">Submit</button>
       </form>
+
+      <div id="output"></div>
+
     </main>
     <footer>
       <div id="logoFooter">
@@ -129,5 +131,6 @@
       </ul>
     </footer>
     <script src="script/script.js" rel="stylesheet"></script>
+    <script src="script/form.js" rel="stylesheet"></script>
   </body>
 </html>
