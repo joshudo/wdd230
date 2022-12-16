@@ -1,68 +1,69 @@
-const form = document.querySelector("#myForm");
-const output = document.querySelector("#output"); // Change this to use the correct id
+const formElement = document.querySelector("#myForm");
+const outputElement = document.querySelector("#output");
+const fruitDataUrl = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
-var currentDate = new Date();
-var dateString = currentDate.toLocaleString();
-
-// Adding a submit event listener to the form
-form.addEventListener("submit", (event) => {
-  // Prevent the form from being submitted
+function handleFormSubmit(event) {
+  // Prevent the form from being submitted and refreshing the page
   event.preventDefault();
 
-  const name = document.querySelector("#fname").value;
-  const email = document.querySelector("#email").value;
-  const phone = document.querySelector("#phone").value;
+  // Get the input values
+  const firstName = document.getElementById('fname').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const fruit1 = document.getElementById('fruit1').value;
+  const fruit2 = document.getElementById('fruit2').value;
+  const fruit3 = document.getElementById('fruit3').value;
+  const instructions = document.getElementById('instructions').value;
 
-  // Retrieve the JSON data from the provided URL
-  fetch("https://brotherblazzard.github.io/canvas-content/fruit.json")
-    .then((response) => response.json()) // Parse the data as a JavaScript object
-    .then((data) => {
-      // Get the fruit1, fruit2, and fruit3 values from the form
-      const fruit1 = document.querySelector("#fruit1").value;
-      const fruit2 = document.querySelector("#fruit2").value;
-      const fruit3 = document.querySelector("#fruit3").value;
+  // Calculate the total amount of carbohydrates, protein, fat, sugar, and calories based on the selected fruits
+  const totalCarbs = calculateTotalCarbs(fruit1, fruit2, fruit3);
+  const totalProtein = calculateTotalProtein(fruit1, fruit2, fruit3);
+  const totalFat = calculateTotalFat(fruit1, fruit2, fruit3);
+  const totalSugar = calculateTotalSugar(fruit1, fruit2, fruit3);
+  const totalCalories = calculateTotalCalories(fruit1, fruit2, fruit3);
 
-      // Initialize the values for carbs, protein, fat, sugar, and calories to 0
-      let carbs = 0;
-      let protein = 0;
-      let fat = 0;
-      let sugar = 0;
-      let calories = 0;
+  // Get the current date
+  const date = new Date();
 
-      // Loop through the array of fruits in the JSON data
-      data.forEach((fruit) => {
-        // Check if the current fruit is one of the selected fruits
-        if (
-          fruit.name === fruit1 ||
-          fruit.name === fruit2 ||
-          fruit.name === fruit3
-        ) {
-          // If the fruit is one of the selected fruits, add its values to the totals
-          carbs += fruit.carbs;
-          protein += fruit.protein;
-          fat += fruit.fat;
-          sugar += fruit.sugar;
-          calories += fruit.calories;
-        }
-      });
+  // Build the output string
+  const output = `
+    Input values:
+    First name: ${firstName}
+    Email: ${email}
+    Phone: ${phone}
+    Fruits: ${fruit1}, ${fruit2}, ${fruit3}
+    Instructions: ${instructions}
 
-      // Use the calculated values to create the formatted data string
-      const formattedData = `
-    Hello ${name}!
-  Your drink will be composed of ${fruit1}, ${fruit2}, ${fruit3}.
-  The drink is composed of:
-  carbohydrates: ${carbs}
-  protein: ${protein}
-  fat: ${fat}
-  sugar: ${sugar}
-  calories: ${calories}
+    Order date: ${date.toDateString()}
 
-  Order Date: ${dateString}
-  Contact Email: ${email}
-  Phone #: ${phone}
+    Total carbs: ${totalCarbs}
+    Total protein: ${totalProtein}
+    Total fat: ${totalFat}
+    Total sugar: ${totalSugar}
+    Total calories: ${totalCalories}
   `;
 
-      // Add the formatted data to the output element
-      output.innerHTML = formattedData;
+  // Display the output in the formatted output area
+  const outputArea = document.getElementById('outputArea');
+  outputArea.innerHTML = output;
+}
+
+formElement.addEventListener('submit', handleFormSubmit);
+
+fetch(fruitDataUrl)
+  .then(response => response.json())
+  .then(data => {
+    const selectElements = [
+      document.querySelector('#fruit1'),
+      document.querySelector('#fruit2'),
+      document.querySelector('#fruit3')
+    ];
+    selectElements.forEach(select => {
+      data.forEach(fruit => {
+        const option = document.createElement('option');
+        option.value = fruit.name;
+        option.innerHTML = fruit.name;
+        select.appendChild(option);
+      });
     });
-});
+  });
